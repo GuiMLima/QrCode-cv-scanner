@@ -12,7 +12,11 @@ Este projeto é uma ferramenta de visão computacional desenvolvida em Python pa
   - 🟢 **Sucesso:** Pedido encontrado e validado com exibição de NF e Destinatário.
   - 🟡 **Alerta:** Pedido duplicado (já conferido na sessão atual).
   - 🔴 **Erro:** Código de rastreio não encontrado na lista.
-- **Registro de Logs:** Geração automática de relatórios de conferência em CSV.
+- **Gravação Inteligente:** 
+  - 🎥 Grava automaticamente um curto vídeo de evidência para cada NF validada. 
+  - O vídeo inicia ao detectar a NF e encerra automaticante 3s após a saída do pacote.
+- **Registro de Logs:** Geração automática de relatórios de conferência em CSV (incluindo nome do arquivo de vídeo).
+- **Auto-Loader:** Detecção automática da planilha de pedidos mais recente na pasta.
 
 ### Requisitos
 - Python 3.x
@@ -33,7 +37,11 @@ This project is a computer vision tool developed in Python for validating e-comm
   - 🟢 **Success:** Order found and validated, showing Invoice # and Recipient.
   - 🟡 **Alert:** Duplicate scan (already checked in current session).
   - 🔴 **Error:** Tracking code not found in the list.
-- **Logging:** Automatic generation of conference reports in CSV format.
+- **Smart Recording:**
+  - 🎥 Automatically records a short evidence video for each validated Invoice (NF).
+  - Recording starts upon detection and stops 3s after the package leaves the frame.
+- **Logging:** Automatic generation of conference reports in CSV format (including video filename).
+- **Auto-Loader:** Automatically detects the most recent order spreadsheet in the folder.
 
 ### Requirements
 - Python 3.x
