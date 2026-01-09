@@ -16,11 +16,18 @@ Este projeto é uma ferramenta de visão computacional desenvolvida em Python pa
   - 🎥 Grava automaticamente um curto vídeo de evidência para cada NF validada. 
   - O vídeo inicia ao detectar a NF e encerra automaticante 3s após a saída do pacote.
 - **Registro de Logs:** Geração automática de relatórios de conferência em CSV (incluindo nome do arquivo de vídeo).
-- **Auto-Loader:** Detecção automática da planilha de pedidos mais recente na pasta.
+- **Interface Gráfica Renovada:**
+  - Aplicação multi-página com navegação lateral.
+  - Página Inicial ("Início") focada na seleção de arquivos.
+  - Galeria de Vídeos dedicada com busca integrada por número de NF.
+  - Playback de vídeos com duplo-clique.
+- **Controles na Tela de Escaneamento:** Botões de sobreposição ("HOME", "VIDEOS") para navegação rápida sem fechar o app.
+- **Persistência Contra Duplicatas:** O sistema verifica logs anteriores do dia para evitar re-conferência de pedidos já processados, mesmo após reiniciar.
+- **Documentação:** Código-fonte totalmente documentado em Português e Inglês.
 
 ### Requisitos
 - Python 3.x
-- Bibliotecas: `opencv-python`, `pandas`, `numpy`, `pyzbar`, `openpyxl`
+- Bibliotecas: `opencv-python`, `pandas`, `numpy`, `pyzbar`, `openpyxl`, `tkinterdnd2`
 - Arquivo de dados: `Export_Order...xlsx` (deve estar na mesma pasta)
 
 ---
@@ -41,11 +48,18 @@ This project is a computer vision tool developed in Python for validating e-comm
   - 🎥 Automatically records a short evidence video for each validated Invoice (NF).
   - Recording starts upon detection and stops 3s after the package leaves the frame.
 - **Logging:** Automatic generation of conference reports in CSV format (including video filename).
-- **Auto-Loader:** Automatically detects the most recent order spreadsheet in the folder.
+- **Revamped User Interface:**
+  - Multi-page application with sidebar navigation.
+  - Dedicated Home Page for file selection.
+  - dedicated Video Gallery with integrated search by Invoice #.
+  - Double-click to play recorded videos.
+- **On-Screen Controls:** Overlay buttons ("HOME", "VIDEOS") directly on the scanning screen for quick navigation.
+- **Duplicate Persistence:** System checks daily logs to prevent re-scanning items already processed, even after restart.
+- **Documentation:** Source code fully commented in both Portuguese and English.
 
 ### Requirements
 - Python 3.x
-- Libraries: `opencv-python`, `pandas`, `numpy`, `pyzbar`, `openpyxl`
+- Libraries: `opencv-python`, `pandas`, `numpy`, `pyzbar`, `openpyxl`, `tkinterdnd2`
 - Data file: `Export_Order...xlsx` (must be in the same folder)
 
 ---

@@ -2,3 +2,5 @@ opencv-python
 pyzbar
 pandas
 openpyxl
+
+tkinterdnd2
